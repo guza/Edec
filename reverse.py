@@ -6,5 +6,4 @@ res=list(res)
 for iter in input:
 	res.append(iter)
 
-print res	
-
+print input[::-1]
