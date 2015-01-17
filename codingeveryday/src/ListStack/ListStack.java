@@ -22,7 +22,8 @@ public class ListStack {
 	{
 		Node tmp = new Node(item);
 		tmp.next=top;
-		top=tmp;
+		top=tmp;//?top은 그냥 거쳐가는거..
+		//링크드리스트니까. 스택처럼 표현하기 위해서. 이렇게. 
 	}
 	public Object peek()
 	{
@@ -35,6 +36,7 @@ public class ListStack {
 		top = top.next;
 		return target;
 		// 내가 좀 이해 안됬던게 리턴의 개념인듯. 
+				
 	}
 	public static void main(String[] args) {
 		ListStack ls = new ListStack();
@@ -42,6 +44,8 @@ public class ListStack {
 		ls.push(200);
 		ls.push(300);
 		System.out.println(ls.pop());
+		System.out.println(ls.peek());
+		ls.push(400);
 		System.out.println(ls.peek());
 	}
 }
