@@ -33,9 +33,12 @@ public class ListStack {
 	public Object pop()
 	{
 		Object target = peek();
-		top = top.next;
+		top = top.next; // 아 이게.. 삭제구나. 
 		return target;
 		// 내가 좀 이해 안됬던게 리턴의 개념인듯. 
+		//아냐 그게 아니고 
+		//링크드리스트포 스택 표현하는거 자체를 이해 못했었어. .
+		//그림이 최고다. 
 				
 	}
 	public static void main(String[] args) {
